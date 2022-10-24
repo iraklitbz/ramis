@@ -3,6 +3,7 @@
     <Header
       :color-white="false"
       :headline="title"
+      :go-back-link="goBackLink"
     />
     <div class="flex flex-col">
       <div>
@@ -36,7 +37,11 @@ export default {
       feature: '',
       post: {},
       images: [],
-      error: null
+      error: null,
+      goBackLink: {
+        name: 'Proyectos realizados',
+        url: '/proyectos'
+      }
     }
   },
   mounted () {

@@ -16,13 +16,18 @@
                     </load-svg>
                     <load-svg v-if="$store.state.isMenu" class="w-14 text-white" name="cross"></load-svg>
                 </button>
-                <load-svg
-                    class="mainLogo ml-4"
-                    :class="colorWhite ? 'text-white' : 'text-black'"
-                    name="ramis">
-                </load-svg>
+                <nuxt-link to="/">
+                    <load-svg
+                        class="mainLogo ml-4"
+                        :class="colorWhite ? 'text-white' : 'text-black'"
+                        name="ramis">
+                    </load-svg>
+                </nuxt-link>
             </div>
-            <h5 class="font-bold text-lg text-black" v-if="headline">{{ headline }}</h5>
+            <div class="flex items-center">
+                <nuxt-link class="mr-10 opacity-60 hover:opacity-100" v-if="goBackLink" :to="goBackLink.url">{{ goBackLink.name }}</nuxt-link>
+                <h5 class="font-bold text-lg text-black" v-if="headline">{{ headline }}</h5>
+            </div>
         </div>
         <Menu
             :class="$store.state.isMenu ? 'block' : 'hidden'"
@@ -41,6 +46,10 @@ export default {
         headline: {
             type: String,
             default: ''
+        },
+        goBackLink: {
+            type: Object,
+            default: null
         }
     }
 }
@@ -50,6 +59,6 @@ export default {
         width: 200px;
     }
     .main-menu-button {
-        margin-top: 25px;
+        top: 10px;
     }
 </style>

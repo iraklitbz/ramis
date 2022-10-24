@@ -2,23 +2,23 @@
     <div class="flex flex-col items-center bg-brown min-h-screen pt-14 fixed left-0 top-0 w-full z-40">
         <div class="mt-14 max-w-xl w-full">
             <div class="flex justify-center">
-                <load-svg class="mainLogo ml-4 text-white opacity-60" name="ramis"></load-svg>
+                <a class="cursor-pointer" @click="goTo('')"><load-svg class="mainLogo ml-4 text-white opacity-60" name="ramis"></load-svg></a>
             </div>
             <ul class="main-menu w-full mt-14">
-                <li @click="goTo('')" class="cursor-pointer border-y-2 border-solid border-gray-100 text-center py-2 px-2 text-gray-100 uppercase text-3xl hover:text-white hover:border-white">
-                    <a>Home</a>
+                <li @click="goTo('paseo-mallorca-15')" class="cursor-pointer border-y-2 border-solid border-gray-100 text-center py-3 px-2 border-opacity-60 text-gray-100 uppercase text-2xl">
+                    <a class="opacity-60 hover:text-white hover:opacity-100" to="/paseo-mallorca-15">Paseo Mallorca 15</a>
                 </li>
-                <li @click="goTo('proyectos')" class="cursor-pointer border-b-2 border-solid border-gray-100 text-center py-2 px-2 text-gray-100 uppercase text-3xl hover:text-white hover:border-white">
-                    <a to="/proyectos">Proyectos</a>
+                <li @click="goTo('proyectos')" class="cursor-pointer border-b-2 border-solid border-gray-100 text-center py-3 px-2 border-opacity-60 text-gray-100 uppercase text-2xl">
+                    <a class="opacity-60 hover:text-white hover:opacity-100" to="/proyectos">Proyectos realizados</a>
                 </li>
-                <li @click="goTo('paseo-mallorca-15')" class="cursor-pointer border-b-2 border-solid border-gray-100 text-center py-2 px-2 text-gray-100 uppercase text-3xl hover:text-white hover:border-white">
-                    <a to="/paseo-mallorca-15">Paseo Mallorca 15</a>
+                <li @click="goTo('proyectos')" class="cursor-pointer border-b-2 border-solid border-gray-100 text-center py-3 px-2 border-opacity-60 text-gray-100 uppercase text-2xl">
+                    <a class="opacity-60 hover:text-white hover:opacity-100" to="/proyectos">Futuros Proyectos</a>
                 </li>
-                <li @click="goTo('sobre-rams')" class="cursor-pointer border-b-2 border-solid border-gray-100 text-center py-2 px-2 text-gray-100 uppercase text-3xl hover:text-white hover:border-white">
-                    <a to="/sobre-rams">Sobre rams</a>
+                <li @click="goTo('sobre-rams')" class="cursor-pointer border-b-2 border-solid border-gray-100 border-opacity-60 text-center py-3 px-2 text-gray-100 uppercase text-2xl">
+                    <a class="opacity-60 hover:text-white hover:opacity-100" to="/sobre-rams">Sobre ramis</a>
                 </li>
-                <li @click="goTo('contacto')" class="cursor-pointer border-b-2 border-solid border-gray-100 text-center py-2 px-2 text-gray-100 uppercase text-3xl hover:text-white hover:border-white">
-                    <a to="/contacto">Contacto</a>
+                <li @click="goTo('contacto')" class="cursor-pointer border-b-2 border-solid border-gray-100 text-center border-opacity-60 py-3 px-2 text-gray-100 uppercase text-2xl">
+                    <a class="opacity-60 hover:text-white hover:opacity-100" to="/contacto">Contacto</a>
                 </li>
             </ul>
         </div>
