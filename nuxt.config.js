@@ -19,9 +19,15 @@ export default {
     ]
   },
 
+  pageTransition: {
+    name: 'fade-down',
+    mode: 'out-in'
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/css/main.css',
+    '@/assets/css/transition.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
