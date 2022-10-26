@@ -1,7 +1,7 @@
 <template>
   <div class="general">
     <Header
-      :color-white="true"
+      :color-white="false"
     />
     <div class="flex fixed left-0 top-0 w-full z-10 h-screen">
       <div class="main-bg w-full sm:w-6/12"></div>
@@ -20,7 +20,7 @@ export default {
 </script>
 <style scoped>
   .main-bg {
-    background-image: url('https://picsum.photos/500/500');
+    background-image: url('assets/images/sobre.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

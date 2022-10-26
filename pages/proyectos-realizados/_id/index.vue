@@ -40,7 +40,7 @@ export default {
       error: null,
       goBackLink: {
         name: 'Proyectos realizados',
-        url: '/proyectos'
+        url: '/proyectos-realizados'
       }
     }
   },
