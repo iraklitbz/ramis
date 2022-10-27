@@ -1,5 +1,8 @@
 <template>
-    <header class="pt-10 pb-5 px-10 relative z-30">
+    <header
+        class="pt-10 pb-10 px-10 relative z-30"
+        :class="bgWhite ? 'bg-white' : ''"
+    >
         <div class="flex items-end w-full justify-between">
             <div>
                     <button
@@ -14,7 +17,7 @@
                         name="menu"
                     >
                     </load-svg>
-                    <load-svg v-if="$store.state.isMenu" class="w-14 text-white" name="cross"></load-svg>
+                    <load-svg v-if="$store.state.isMenu" class="w-12 text-white" name="cross"></load-svg>
                 </button>
                 <nuxt-link to="/">
                     <load-svg
@@ -43,6 +46,10 @@ export default {
             type: Boolean,
             default: true
         },
+        bgWhite: {
+            type: Boolean,
+            default: false
+        },
         headline: {
             type: String,
             default: ''
@@ -56,9 +63,9 @@ export default {
 </script>
 <style scoped>
     .mainLogo {
-        width: 200px;
+        width: 150px;
     }
     .main-menu-button {
-        top: 10px;
+        top: 15px;
     }
 </style>

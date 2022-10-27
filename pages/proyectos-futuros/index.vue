@@ -1,5 +1,5 @@
 <template>
-    <div class="general">
+    <div class="general pb-24">
       <Header
         :color-white="false"
       />

@@ -3,12 +3,12 @@
       <Header
         :color-white="false"
       />
-      <div class="px-5 sm:px-0 max-w-screen-md mx-auto">
+      <div class="px-5 sm:px-0 max-w-screen-sm mx-auto">
         <div class="bloque pt-10 border-b-4 border-solid border-black">
           <img class="w-full mb-10" alt="Paseo Mallorca 15" :src="require('~/assets/images/18.jpg')">
           <div class="m-20">
-            <h2 class="text-2xl sm:text-6xl font-light text-center">PASEO MALLORCA 15</h2>
-             <h2 class="text-2xl sm:text-6xl font-light text-center mt-10">(R)</h2>
+            <h2 class="text-2xl sm:text-4xl font-light text-center">PASEO MALLORCA 15</h2>
+             <h2 class="text-2xl sm:text-4xl font-light text-center mt-10">(R)</h2>
           </div>
           <p class="text-base opacity-70 text-justify mb-20">En el enclave más privilegiado y soleado del Paseo Mallorca, el paseo arbolado frente a la riera situado en el corazón de la ciudad, este nuevo conjunto residencial supondrá un hito en la ciudad de Palma de Mallorca por su arquitectura, sostenibilidad, eficiencia energética, integración urbana, calidad de materiales, interiorismo y confort.<br> La fachada formada por paneles correderos de lamas de madera funciona como filtro solar creando un cambiante juego de luces y sombras en las viviendas que permite aprovechar el sol de forma eficiente todo el año. El proyecto se ha diseñado siguiendo los estándares Passivhaus para conseguir una máxima eficiencia energética y una deman- da de climatización de tan solo 15kWh/(m2a). De esta forma se reducen hasta en casi un 90% las necesidades de climatización y refrigeración respecto a una edificación convencional, convirtiéndose en una construcción con un coste energético muy bajo para el propietario y el planeta. Este modo de construcción se encuadra en el estándar de consumo casi nulo o nearly zero energy building (nZEB).</p>
           <img class="w-full mb-10" alt="Paseo Mallorca 15" :src="require('~/assets/images/1.jpg')">

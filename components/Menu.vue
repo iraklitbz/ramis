@@ -38,6 +38,6 @@ export default {
 </script>
 <style scoped>
     .mainLogo {
-        width: 200px;
+        width: 170px;
     }
 </style>

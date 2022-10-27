@@ -1,0 +1,57 @@
+<template>
+        <ul class="relative galleryBox">
+            <li v-for="(item, index) in gallery"
+                class="galleryItems absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
+                :class="{'active': index === currentSlide}"
+                :style="index === currentSlide ? 'z-index: 10' : 'z-index: 0'"
+                :id="index"
+                :key="index"
+            >
+                <img class="w-full" :src="'http://15.188.27.140:1337' + item.attributes.image.data.attributes.url">
+            </li>
+        </ul>
+</template>
+
+
+<script>
+import axios from 'axios';
+export default {
+    name: 'Menu',
+    data () {
+        return {
+            gallery: [],
+            currentSlide: 1,
+        }
+    },
+    mounted () {
+        axios
+        .get('http://15.188.27.140:1337/api/slides/?populate=*')
+        .then(response => (this.gallery = response.data.data))
+        .catch(error => (this.error = error))
+        this.update()
+    },
+    methods: {
+         update() {
+            setInterval(() => {
+                if(this.currentSlide === this.gallery.length - 1) {
+                    this.currentSlide = 0
+                } else {
+                    this.currentSlide++
+                }
+            }, 6000)
+        }
+    }
+}
+</script>
+<style scoped>
+.galleryBox {
+    width: 800px;
+}
+.galleryItems {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+.galleryItems.active {
+    opacity: 1;
+}
+</style>
