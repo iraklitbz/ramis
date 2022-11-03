@@ -1,14 +1,22 @@
 <template>
-        <ul class="relative galleryBox">
-            <li v-for="(item, index) in gallery"
-                class="galleryItems absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
-                :class="{'active': index === currentSlide}"
-                :style="index === currentSlide ? 'z-index: 10' : 'z-index: 0'"
-                :id="index"
-                :key="index"
+        <ul 
+            class="relative w-full h-full"
+        >
+            <div
+                v-for="(item, index) in gallery"
+                class="galleryBox"
+                :class="item.attributes.size === 'full' ? 'fullWidth' : ''" 
             >
-                <img class="w-full" :src="'http://15.188.27.140:1337' + item.attributes.image.data.attributes.url">
-            </li>
+                <li
+                    class="galleryItems absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
+                    :class="{'active': index === currentSlide}"
+                    :style="index === currentSlide ? 'z-index: 10' : 'z-index: 0'"
+                    :id="index"
+                    :key="index"
+                >
+                    <img class="w-full" :src="'http://15.188.27.140:1337' + item.attributes.image.data.attributes.url">
+                </li>
+            </div>
         </ul>
 </template>
 
@@ -20,7 +28,7 @@ export default {
     data () {
         return {
             gallery: [],
-            currentSlide: 1,
+            currentSlide: 0,
         }
     },
     mounted () {
@@ -43,9 +51,18 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 .galleryBox {
     width: 800px;
+}
+.galleryBox.fullWidth {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    .galleryItems {
+        width: 100%;
+    }
 }
 .galleryItems {
     opacity: 0;

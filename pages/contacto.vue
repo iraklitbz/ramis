@@ -6,18 +6,11 @@
     <div class="block md:flex md:fixed left-0 top-0 w-full z-10 h-screen">
       <div class="w-full md:w-6/12 flex flex-col justify-center px-6 md:px-14">
         <ul>
-          <li class="font-bold text-base"><a @click="hanndleMap('palma')" class="cursor-pointer">Ramis Palma</a></li>
-          <li class="text-base">Paseo Mallorca 15, bajos</li>
+          <li class="font-bold text-base"><a @click="hanndleMap('palma')" class="cursor-pointer">Ramis</a></li>
+          <li class="text-base">C/ Miguel de los santos oliver 7b, bajos.</li>
           <li class="text-base">07011 Palma de Mallorca</li>
           <li class="text-base">T. 971 737 777</li>
-          <li class="text-base">info@ramis.com</li>
-        </ul>
-        <ul class="mt-14">
-          <li class="font-bold text-base"><a class="cursor-pointer" @click="hanndleMap('marratxi')">Ramis Marratxi</a></li>
-          <li class="text-base">C/ Miguel de los Santos Oliver, 7b bajos</li>
-          <li class="text-base">07011 Palma de Mallorca</li>
-          <li class="text-base">T. 971 737 777</li>
-          <li class="text-base">info@ramis.com</li>
+          <li class="text-base">info@ramispromociones.com</li>
         </ul>
         <div class="social mt-14">
           <span class="font-bold text-base">Siguenos</span>
