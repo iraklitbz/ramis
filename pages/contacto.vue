@@ -3,9 +3,9 @@
       <Header
         :color-white="false"
       />
-      <div class="flex flex-col sm:flex-row absolute sm:fixed left-0 top-0 w-full z-10 sm:h-screen mb-10 sm:mb-10">
+      <div class="flex flex-col sm:flex-row sm:fixed left-0 top-0 w-full z-10 sm:h-screen mb-10 sm:mb-10">
        
-        <div class="w-full sm:w-6/12 flex flex-col justify-center px-6 sm:px-14">
+        <div class="w-full sm:w-6/12 flex flex-col justify-center px-6 sm:px-14 mb-10">
           <ul class="mt-10 sm:mt-0">
             <li class="font-bold text-base"><a class="cursor-pointer">Ramis</a></li>
             <li class="text-base">C/ Miguel de los santos oliver 7b, bajos.</li>
