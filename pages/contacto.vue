@@ -1,20 +1,14 @@
 <template>
     <div class="general">
       <Header
-        :color-white="true"
+        :color-white="false"
       />
       <div class="flex flex-col sm:flex-row absolute sm:fixed left-0 top-0 w-full z-10 sm:h-screen mb-10 sm:mb-10">
-        <div class="main-bg w-full sm:w-6/12 h-96 sm:h-auto"></div>
+       
         <div class="w-full sm:w-6/12 flex flex-col justify-center px-6 sm:px-14">
           <ul class="mt-10 sm:mt-0">
-            <li class="font-bold text-base"><a @click="hanndleMap('palma')" class="cursor-pointer">Ramis</a></li>
+            <li class="font-bold text-base"><a class="cursor-pointer">Ramis</a></li>
             <li class="text-base">C/ Miguel de los santos oliver 7b, bajos.</li>
-            <li class="text-base">07011 Palma de Mallorca</li>
-            <li class="text-base">T. 971 22 28 28</li>
-            <li class="text-base">info@ramispromociones.com</li>
-          </ul>
-          <ul class="mt-4">
-            <li class="font-bold text-base"><a @click="hanndleMap('marratxi')" class="cursor-pointer">Ramis</a></li>
             <li class="text-base">C/ Paseo mallorca 15, bajos.</li>
             <li class="text-base">07011 Palma de Mallorca</li>
             <li class="text-base">T. 971 22 28 28</li>
@@ -27,6 +21,7 @@
             </ul>
         </div>
       </div>
+      <div class="main-bg w-full sm:w-6/12 h-96 sm:h-auto"></div>
     </div>
   </div>
 </template>
