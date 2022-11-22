@@ -3,7 +3,7 @@
       <Header
         :color-white="false"
       />
-      <div class="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-4 gap-4 px-10">
+      <div class="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-4 gap-4 px-6 sm:px-10">
         <nuxt-link
           v-for="(card, i) in posts"
           :key="i"

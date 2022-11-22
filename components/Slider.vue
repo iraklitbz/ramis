@@ -5,7 +5,6 @@
             <div
                 v-for="(item, index) in gallery"
                 class="galleryBox"
-                :class="item.attributes.size === 'full' ? 'fullWidth' : ''" 
             >
                 <li
                     class="galleryItems absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
@@ -53,13 +52,7 @@ export default {
 </script>
 <style scoped lang="scss">
 .galleryBox {
-    width: 800px;
-}
-.galleryBox.fullWidth {
     width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
     .galleryItems {
         width: 100%;
     }
@@ -67,6 +60,12 @@ export default {
 .galleryItems {
     opacity: 0;
     transition: opacity 0.3s ease-in;
+    object-fit: cover;
+    height: 100%;
+    img {
+        object-fit: cover;
+        height: 100%;
+    }
 }
 .galleryItems.active {
     opacity: 1;

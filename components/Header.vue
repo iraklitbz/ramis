@@ -1,9 +1,9 @@
 <template>
     <header
-        class="pt-10 pb-10 px-10 relative z-30"
+        class="pt-10 pb-6 sm:pb-10 px-6 sm:px-10 relative z-30"
         :class="bgWhite ? 'bg-white' : ''"
     >
-        <div class="flex items-end w-full justify-between">
+        <div class="flex flex-col sm:flex-row sm:items-end w-full justify-between">
             <div>
                     <button
                     type="button"
@@ -27,7 +27,7 @@
                     </load-svg>
                 </nuxt-link>
             </div>
-            <div class="flex items-center">
+            <div class="flex items-center justify-between sm:justify-end mt-5 sm:mt-0">
                 <nuxt-link class="mr-10 opacity-60 hover:opacity-100" v-if="goBackLink" :to="goBackLink.url">{{ goBackLink.name }}</nuxt-link>
                 <h5 class="font-bold text-lg text-black" v-if="headline">{{ headline }}</h5>
             </div>
