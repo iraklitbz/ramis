@@ -23,7 +23,6 @@ export default {
   .main-bg {
     background-image: url('assets/images/sobre.jpg');
     background-size: cover;
-    background-position: center center;
     background-repeat: no-repeat;
   }
 </style>
