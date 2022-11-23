@@ -14,9 +14,6 @@
                 <li @click="goTo('proyectos-futuros')" class="cursor-pointer border-b-2 border-solid border-gray-100 text-center py-3 px-2 border-opacity-60 text-gray-100 uppercase text-2xl">
                     <a class="opacity-60 hover:text-white hover:opacity-100" to="/proyectos">Futuros Proyectos</a>
                 </li>
-                <li @click="goTo('sobre-rams')" class="cursor-pointer border-b-2 border-solid border-gray-100 border-opacity-60 text-center py-3 px-2 text-gray-100 uppercase text-2xl">
-                    <a class="opacity-60 hover:text-white hover:opacity-100" to="/sobre-rams">Sobre ramis</a>
-                </li>
                 <li @click="goTo('contacto')" class="cursor-pointer border-b-2 border-solid border-gray-100 text-center border-opacity-60 py-3 px-2 text-gray-100 uppercase text-2xl">
                     <a class="opacity-60 hover:text-white hover:opacity-100" to="/contacto">Contacto</a>
                 </li>
