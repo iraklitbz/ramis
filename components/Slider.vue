@@ -13,7 +13,7 @@
                     :id="index"
                     :key="index"
                 >
-                    <img class="w-full" :src="'http://15.188.27.140:1337' + item.attributes.image.data.attributes.url">
+                    <img class="w-full" :src="'http://13.38.83.185:1337' + item.attributes.image.data.attributes.url">
                 </li>
             </div>
         </ul>
@@ -32,7 +32,7 @@ export default {
     },
     mounted () {
         axios
-        .get('http://15.188.27.140:1337/api/slides/?populate=*')
+        .get('http://13.38.83.185:1337/api/slides/?populate=*')
         .then(response => (this.gallery = response.data.data))
         .catch(error => (this.error = error))
         this.update()

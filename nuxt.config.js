@@ -52,7 +52,7 @@ export default {
 
   strapi: {
     entities: ['posts'],
-    url: 'http://15.188.27.140:1337'
+    url: 'http://13.38.83.185:1337'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
