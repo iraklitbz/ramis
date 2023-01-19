@@ -52,7 +52,7 @@ export default {
 
   strapi: {
     entities: ['posts'],
-    url: 'http://13.38.83.185:1337'
+    url: 'https://ramis.onrender.com'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

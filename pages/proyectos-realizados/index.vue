@@ -11,7 +11,7 @@
           :id="card.id"
           :to="'proyectos-realizados/' + card.id"
         >
-          <img class="w-full object-fill h-full" :src="'http://13.38.83.185:1337' + card.attributes.destacado.data.attributes.formats.medium.url" alt="Paseo Mallorca 15" />
+          <img class="w-full object-fill h-full" :src="'https://ramis.onrender.com' + card.attributes.destacado.data.attributes.formats.medium.url" alt="Paseo Mallorca 15" />
           <h2 class="font-bold text-lg text-white">{{ card.attributes.title }}</h2>
         </nuxt-link>
       </div>
@@ -30,7 +30,7 @@ export default {
   },
   mounted () {
     axios
-      .get('http://13.38.83.185:1337/api/posts?populate=*')
+      .get('https://ramis.onrender.com/api/posts?populate=*')
       .then(response => (this.posts = response.data.data.filter(post => post.attributes.category === 'realizados')))
       .catch(error => (this.error = error))
   }
