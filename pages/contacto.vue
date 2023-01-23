@@ -14,9 +14,12 @@
           <ul class="mt-10 md:mt-0">
             <li class="font-bold text-base"><a class="cursor-pointer">Ramis</a></li>
             <li class="text-base"> C/ Miguel De Los Santos Oliver Nº 7A Bajos</li>
+            <li class="text-base">T. 971 73 64 20</li>
+            <li class="text-base h-2"></li>
             <li class="text-base">Paseo Mallorca Nº 15 Bajos</li>
-            <li class="text-base">07011 Palma de Mallorca</li>
             <li class="text-base">T. 971 22 28 28</li>
+            <li class="text-base h-2"></li>
+            <li class="text-base">07011 Palma de Mallorca</li>
             <li class="text-base">info@ramispromociones.com</li>
           </ul>
           <div class="social mt-14">

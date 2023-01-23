@@ -11,7 +11,7 @@
           :id="card.id"
           :to="'proyectos-futuros/' + card.id"
         >
-          <img class="w-full object-fill h-full" :src="'https://ramis.onrender.com' + card.attributes.destacado.data.attributes.formats.medium.url" alt="Paseo Mallorca 15" />
+          <img class="w-full object-fill h-full" :src="card.attributes.destacado.data.attributes.url" alt="Paseo Mallorca 15" />
           <h2 class="font-bold text-lg text-white">{{ card.attributes.title }}</h2>
         </nuxt-link>
       </div>

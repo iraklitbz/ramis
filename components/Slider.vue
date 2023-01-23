@@ -13,7 +13,7 @@
                     :id="index"
                     :key="index"
                 >
-                    <img class="w-full" :src="'https://ramis.onrender.com' + item.attributes.image.data.attributes.url">
+                    <img class="w-full" :src="item.attributes.image.data.attributes.url">
                 </li>
             </div>
         </ul>

@@ -10,10 +10,10 @@
 
       </div>
       <div class="w-full flex flex-col justify-center px-6 sm:px-10">
-        <img class="w-full object-fill h-full" :src="'https://ramis.onrender.com' + feature" alt="Paseo Mallorca 15" />
+        <img class="w-full object-fill h-full" :src="feature" alt="Paseo Mallorca 15" />
         <ul class="mt-5 grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-4 gap-4 px-0">
-          <li @click="changeImg(item.attributes.formats.large.url)" class="cursor-pointer sm:opacity-75 hover:opacity-100" v-for="(item, i) in images" :key="i">
-            <img class="w-full object-fill h-full" :src="'https://ramis.onrender.com' + item.attributes.formats.small.url" />
+          <li @click="changeImg(item.attributes.url)" class="cursor-pointer sm:opacity-75 hover:opacity-100" v-for="(item, i) in images" :key="i">
+            <img class="w-full object-fill h-full" :src="item.attributes.formats.small.url" />
           </li>
         </ul>
       </div>
@@ -48,8 +48,9 @@ export default {
     axios
       .get('https://ramis.onrender.com/api/posts/' + this.$route.params.id + '?populate=*')
       .then(response => (
+        console.log(response.data.data.attributes),
           this.title = response.data.data.attributes.title,
-          this.feature = response.data.data.attributes.destacado.data.attributes.formats.large.url,
+          this.feature = response.data.data.attributes.destacado.data.attributes.url,
           this.images = response.data.data.attributes.img.data
         ))
       .catch(error => (this.error = error))
