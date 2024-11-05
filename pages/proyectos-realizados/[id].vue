@@ -32,8 +32,8 @@
     const route = useRoute()
     await projectos().getProjectoByID(route.params.id)
     const goBackLink = {
-      name: 'Proyectos futuros',
-      url: '/proyectos-futuros'
+      name: 'Proyectos realizados',
+      url: '/proyectos-realizados'
     }
     const activeImage = ref(projectos().projecto.fields.feature.fields.file.url);
     function handleDynamicImage (url) {

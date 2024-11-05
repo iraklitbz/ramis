@@ -6,6 +6,7 @@
         <Grid 
             :loading="projectos().loading"
             :items="reverseData" 
+            :category="'proyectos-realizados'"
         />
     </div>
 </template>

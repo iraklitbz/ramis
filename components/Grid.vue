@@ -3,9 +3,9 @@
         <nuxt-link
             v-for="(card, i) in items"
             :key="i"
-            class="box relative overflow-hidden"
+            class="box relative overflow-hidden max-h-64"
             :id="card.sys.id"
-            :to="'/proyectos-futuros/' + card.sys.id"
+            :to="`/${props.category}/${card.sys.id}`"
         >
             <img class="w-full object-fill h-full" :src="card.fields.feature.fields.file.url" :alt="card.fields.title" />
             <h2 class="font-bold text-lg text-white">{{ card.fields.title }}</h2>
@@ -25,6 +25,7 @@
 <script setup>
     const props = defineProps({
         loading: Boolean,
-        items: Array
+        items: Array,
+        category: String
     })
 </script>
